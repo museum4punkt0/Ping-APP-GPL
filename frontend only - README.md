@@ -1,15 +1,25 @@
-**Quick Start**
 
-- npm i
+# Meinobjekt front-end
+
+## Quick Start
+
+**iOS**
+- npm i --legacy-peer-deps
 - cd ios && pod install
 
-For running on devices use:
+For running use:
 - react-native run-ios
-- react-native run-android
-- 
+
+
+**Android**
+- npm i --legacy-peer-deps
+
+For running use:
+- react-native run-android --variant stageDebug
+
 
 ## Prerequisites
-You will need the following things properly installed on your computer.
+You will need the following things properly installed on your computer:
 
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM)
@@ -18,12 +28,19 @@ You will need the following things properly installed on your computer.
 * [XCode](https://itunes.apple.com/app/xcode/id497799835) (for iOS development)
 
 ## Installation
-* `git clone git@ssh.hub.teamvoy.com:mein-object/mobile.git mo-mobile`
+* Clone the repo: `git clone https://github.com/museum4punkt0/Mein-Objekt-MOB-GPL.git`
+* Enter inside of the project's directory: `cd mobile`
+* Install dependencies: `npm i --legacy-peer-deps` (If first run results with an error - run this command for the second time)
+#### For Android
+* create a `local.properties` file in the project's path: `android/local.properties` containing this line: `sdk.dir = <path_to_your_android_sdk>`
+* Download the debug keystore from this link (https://raw.githubusercontent.com/facebook/react-native/master/template/android/app/debug.keystore) and put int in the `android/app/` directory
 
-* `cd mo-mobile && npm install`
-* 
+
 ## Running
+
 ### Android
+
+#### On the device
 Connect Android device via USB, where Android debugging bridge (ADB) is enabled. Run next command in terminal:
 
 `adb devices`
@@ -38,10 +55,28 @@ your device connected successfully. If you see next message:
 
 please, check is ADB enabled or check your USB connection.
 
-Then run following command: `react-native run-android`
+Then run following command in the root project's directory: `react-native run-android --variant stageDebug`
+The App will be run against a Stage backend
 
-#### Possible problems
+#### In the emulator
+
+Open the `/android` folder of this project in an `Android Studio`
+
+Open up and `AVD Manager`: hit the Shift key two times and enter `AVD` in the prompt, then click on the `AVD Manager` option
+
+Create a new Virtual Device or start an existing one
+
+Ensure that you did everything correct by typing `adb device` in the console. You should get an output like:
+`emulator-5554	device`
+
+To run an project in the emulator:
+`react-native run-android --variant stageDebug`
+The App will be run against a Stage backend
+
+## Possible problems
+
 ##### Could not connect to development server
+
 Solution:
 * Find out your desktop IP address (you can run following command in terminal: `ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'`)
 * `npm start`
@@ -55,8 +90,8 @@ Solution:
 Before building and running project, run next in terminal:
 `cd ios && pod install`
 
-#### Running on Simulator
-Run following command in terminal: `react-native run-ios`
+Run following command in terminal:
+`react-native run-ios`
 
 #### Running on device
 * Open `ios/MeinObjekt.xcworkspace` file in XCode

@@ -23,7 +23,8 @@ Das Projekt museum4punkt0 wird gefördert durch die Beauftragte der Bundesregier
 7. Quick Start
 8. Installation
 9. Credits
-10. Lizenz 
+10. Markenname
+11. Lizenz 
 
 # Technologiebeschreibung
 Zur Benutzung werden Smartphones benötigt, die entweder über ein iOS oder ein Android Betriebssystem verfügen. Die Anwendung läuft ab folgenden Betriebssystemen: Android Oreo 8.0 und iOS 10.3.3.. Nach Veröffentlichung der App im Playstore bzw. Appstore kann die Anwendung von jedem/r SmartphonebesitzerIn heruntergeladen und installiert werden. 

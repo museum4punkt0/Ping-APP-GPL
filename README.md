@@ -150,4 +150,4 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
 
-[![LICENSE.md](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/museum4punkt0/Mein-Objekt-Backend/blob/master/LICENSE.md)
+[![LICENSE.md](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/museum4punkt0/Ping-APP-GPL/blob/master/LICENSE.md)
